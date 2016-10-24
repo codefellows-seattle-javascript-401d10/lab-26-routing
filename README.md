@@ -47,3 +47,9 @@
  * the template should use an angular expression to set the content of an **h1** tag to its controllers title property
 * each view should have a sass file
  * to make your page pretty
+ 
+# Tests
+* write test to ensure the title proptery is set for EACH controller
+ * /test/home-controller-test.js
+ * /test/gallery-controller-test.js
+ * /test/signup-controller-test.js
