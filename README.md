@@ -40,9 +40,9 @@
  * use require.context to add all of your angular construct definitions
 
 ## Requirements
-* create three views `/#/home`, `/#/signup/`, `/#/gallery`,
+* create three views `/#/home`, `/#/signup/`, `/#/gallery`
 * each view should have a controller
- * each contorller should have a title propery
+ * each controller should have a title property
 * each view should have a template
  * the template should use an angular expression to set the content of an **h1** tag to its controllers title property
 * each view should have a sass file
