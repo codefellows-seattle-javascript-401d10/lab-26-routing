@@ -5,7 +5,7 @@ module.exports = ['$stateProvider', '$urlRouterProvider', routerConfig];
 function routerConfig($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.when('/', '/home');
-  
+
   let routes = [
     {
       name: 'home',
@@ -20,6 +20,13 @@ function routerConfig($stateProvider, $urlRouterProvider) {
       template: require('../view/signup/signup.html'),
       controller: 'SignupController',
       controllerAs: 'signupCtrl',
+    },
+    {
+      name: 'gallery',
+      url: '/gallery',
+      template: require('../view/gallery/gallery.html'),
+      controller: 'GalleryController',
+      controllerAs: 'galleryCtrl',
     },
   ];
 
