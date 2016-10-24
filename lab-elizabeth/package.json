@@ -43,8 +43,6 @@
     "node-sass": "^3.10.1",
     "pascalcase": "^0.1.1",
     "resolve-url-loader": "^1.6.0",
-    "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1",
     "ui-router": "^1.0.0-alpha.3",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2"
