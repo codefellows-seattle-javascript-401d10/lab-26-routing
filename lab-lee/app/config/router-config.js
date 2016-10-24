@@ -22,6 +22,13 @@ function routerConfig($stateProvider, $urlRouterProvider) {
       controller: 'SignupController',
       controllerAs: 'signupCtrl',
     },
+    {
+      name: 'gallery',
+      url: '/gallery',
+      template: require('../view/gallery/gallery.html'),
+      controller: 'GalleryController',
+      controllerAs: 'galleryCtrl',
+    },
   ];
 
   routes.forEach( route => {
