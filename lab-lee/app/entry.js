@@ -27,11 +27,15 @@ context.keys().forEach( key => {
 });
 
 // load view controllers
-context = require.context('./view/', true, /.js$/);
+context = require.context('./view/', true, /conreoller\.js$/);
 context.keys().forEach( key => {
   let name = pascalcase(path.basename(key, '.js'));
   leegram.controller(name, context(key));
 });
+//  ''/Users/lee/leegram/app/view/home/home-controller.js'
+// home-controller
+// HomeController
+
 
 // load services
 // context = require.context('./service/', true, /.js$/);
