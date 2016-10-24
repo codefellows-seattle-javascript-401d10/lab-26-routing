@@ -21,17 +21,21 @@ const uiRouter = require('angular-ui-router');
 const leegram = angular.module('leegram', [uiRouter]);
 
 // load config
-let context = require.context('./config/', true, /.js$/);
+let context = require.context('./config/', true, /\.js$/);
 context.keys().forEach( key => {
   leegram.config(context(key));
 });
 
 // load view controllers
-context = require.context('./view/', true, /.js$/);
+context = require.context('./view/', true, /\.js$/);
 context.keys().forEach( key => {
   let name = pascalcase(path.basename(key, '.js'));
   leegram.controller(name, context(key));
 });
+//  ''/Users/lee/leegram/app/view/home/home-controller.js'
+// home-controller
+// HomeController
+
 
 // load services
 // context = require.context('./service/', true, /.js$/);
