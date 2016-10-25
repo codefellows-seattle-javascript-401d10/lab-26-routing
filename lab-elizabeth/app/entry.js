@@ -18,26 +18,26 @@ const uiRouter = require('angular-ui-router');
 const uiBootstrap = require('angular-ui-bootstrap');
 
 // create angular module
-const demoApp = angular.module('demoApp', [ngTouch, ngAnimate, uiRouter, uiBootstrap]);
+const lizzieApp = angular.module('lizzieApp', [ngTouch, ngAnimate, uiRouter, uiBootstrap]);
 
 // load config
 let context = require.context('./config/', true, /\.js$/);
 context.keys().forEach( path => {
-  demoApp.config(context(path));
+  lizzieApp.config(context(path));
 });
 
 // load view controllers
 context = require.context('./view/', true, /\.js$/);
 context.keys().forEach( key => {
   let name = pascalcase(`${path.basename(key, '.js')}Controller`);
-  demoApp.controller(name, context(key));
+  lizzieApp.controller(name, context(key));
 });
 
 // // load services
 // context = require.context('./service/', true, /\.js$/);
 // context.keys().forEach( key => {
 //   let name = camelcase(`${path.basename(key, '.js')}`);
-//   demoApp.service(name, context(key));
+//   lizzieApp.service(name, context(key));
 // });
 //
 // // load components
@@ -45,5 +45,5 @@ context.keys().forEach( key => {
 // context.keys().forEach( key => {
 //   let name = camelcase(`${path.basename(key, '.js')}`);
 //   console.log('loading component', name);
-//   demoApp.component(name, context(key));
+//   lizzieApp.component(name, context(key));
 // });
