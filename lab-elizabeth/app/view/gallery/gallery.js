@@ -1,6 +1,6 @@
 'use strict';
 
-require('./_gallery.scss');
+require('./gallery.scss');
 
 module.exports = ['$log', GalleryController ];
 

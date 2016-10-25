@@ -1,6 +1,6 @@
 'use strict';
 
-require('./_signup.scss');
+require('./signup.scss');
 
 module.exports = ['$log', SignupController ];
 

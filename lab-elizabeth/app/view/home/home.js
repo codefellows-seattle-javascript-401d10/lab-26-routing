@@ -1,6 +1,6 @@
 'use strict';
 
-require('./_home.scss');
+require('./home.scss');
 
 module.exports = ['$log', HomeController ];
 
