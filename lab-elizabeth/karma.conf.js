@@ -14,7 +14,7 @@ module.exports = function(config) {
     singleRun: false,
     concurrency: Infinity,
     frameworks: ['jasmine'],
-    reporters: ['progress'],
+    reporters: ['mocha'],
     browsers: ['PhantomJS'],
     logLevel: config.LOG_INFO,
     preprocessors: {
