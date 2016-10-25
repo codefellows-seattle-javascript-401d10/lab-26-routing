@@ -1,9 +1,5 @@
 'use strict';
 
-require('./lib/setup.js');
-
-const angular = require('angular');
-
 describe('testing signupCtrl', function() {
   beforeEach(() => {
     angular.mock.module('claudiagram');
@@ -14,6 +10,7 @@ describe('testing signupCtrl', function() {
 
   describe('testing initial properties', () => {
     it('title should equal "signup"', () => {
-      expect(this.signupCtrl.title).toBe('signup');
+      expect(this.signupCtrl.title).toBe('Signup');
     });
   });
+});

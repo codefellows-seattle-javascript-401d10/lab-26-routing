@@ -1,9 +1,5 @@
 'use strict';
 
-require('./lib/setup.js');
-
-const angular = require('angular');
-
 describe('testing homeCtrl', function() {
   beforeEach(() => {
     angular.mock.module('claudiagram');
@@ -17,3 +13,4 @@ describe('testing homeCtrl', function() {
       expect(this.homeCtrl.title).toBe('Home');
     });
   });
+});

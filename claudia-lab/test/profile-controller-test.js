@@ -1,9 +1,5 @@
 'use strict';
 
-require('./lib/setup.js');
-
-const angular = require('angular');
-
 describe('testing profileCtrl', function() {
   beforeEach(() => {
     angular.mock.module('claudiagram');
@@ -17,3 +13,4 @@ describe('testing profileCtrl', function() {
       expect(this.profileCtrl.title).toBe('Profile');
     });
   });
+});
