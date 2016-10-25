@@ -1,6 +1,6 @@
 
 process.env.NODE_ENV = 'testing';
-process.env.API_URL= 'http://test.slugram.com';
+process.env.API_URL= 'http://localhost:3000';
 const webpack = require('./webpack.config.js');
 webpack.entry = {};
 
@@ -18,7 +18,7 @@ module.exports = function(config) {
       'app/entry.js': ['webpack'],
       'test/**/*-test.js': ['webpack'],
     },
-    reporters: ['progress'],
+    reporters: ['mocha'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

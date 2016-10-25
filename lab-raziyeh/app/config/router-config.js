@@ -6,17 +6,17 @@ function routerConfig ($stateProvider, $urlRouterProvider){
 
   .state('home', {
     url: '/home',
-    template: require('../view/home/home.html'), controller: 'HomeController',
+    template: require('../view/home/home.html'), controller: 'HomeController', controllerAs:'homeCtrl', 
   })
 
   .state('signup', {
     url: '/signup',
-    template: require('../view/signup/signup.html'), controller: 'SignupController',
+    template: require('../view/signup/signup.html'), controller: 'SignupController',controllerAs:'signupCtrl',
   })
 
   .state('gallery', {
     url: '/gallery',
-    template: require('../view/gallery/gallery.html'), controller: 'GalleryController',
+    template: require('../view/gallery/gallery.html'), controllerAs:'galleryCtrl',
   });
 
   $urlRouterProvider.otherwise('/');

@@ -14,18 +14,18 @@ const angular = require('angular');
 const uiRouter = require('angular-ui-router');
 
 // create app module
-const slugram = angular.module('slugram', [uiRouter]);
+const profile = angular.module('profile', [uiRouter]);
 
 let context = require.context('./config/', true, /\.js$/);
 context.keys().forEach(key => {
-  slugram.config(context(key));
+  profile.config(context(key));
 });
 
 // load view controllers in ./view
 context = require.context('./view/', true, /\.js$/);
 context.keys().forEach( key => {
   let name = pascalcase(path.basename(key, '.js'));
-  slugram.controller(name, context(key));
+  profile.controller(name, context(key));
 });
 
 // load services 

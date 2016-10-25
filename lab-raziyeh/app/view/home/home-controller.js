@@ -1,10 +1,8 @@
 'use strict';
 
-// requore home.scss
-require('./home.scss');
+//require('./home.scss');
 
-module.exports = ['$log', HomeController];
-
-function HomeController($log){
+module.exports = ['$log', function ($log){
   $log.debug('init homeCtrl');
-}
+  this.title = 'Home';
+}];

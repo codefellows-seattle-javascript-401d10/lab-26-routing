@@ -1,9 +1,8 @@
 'use strict';
 
-//require('./gallery.scss');
+require('./gallery.scss');
 
-module.exports = ['$log', GalleryController];
-
-function GalleryController($log){
+module.exports = ['$log', function ($log){
   $log.debug('init GalleryController');
-}
+  this.title = 'Gallery';
+}];
