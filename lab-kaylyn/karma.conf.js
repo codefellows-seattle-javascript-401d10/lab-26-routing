@@ -1,5 +1,5 @@
 process.env.NODE_ENV = 'testing';
-process.env.API_URL= 'http://test.demoApp.com';
+process.env.API_URL= 'http://test.slugram.com';
 const webpack = require('./webpack.config.js');
 webpack.entry = {};
 
