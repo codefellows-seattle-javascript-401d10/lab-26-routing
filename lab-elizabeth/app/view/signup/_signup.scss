@@ -1,5 +1,13 @@
 @import "theme";
 
 .signup {
+  width: 70%;
+  height: 50%;
   background-color: $app-secondary;
+
+    h1 {
+      font-family: $app-title;
+      font-size: 3em;
+      color: $app-white;
+    }
 }

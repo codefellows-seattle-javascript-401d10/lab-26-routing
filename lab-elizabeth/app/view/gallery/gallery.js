@@ -6,4 +6,5 @@ module.exports = ['$log', GalleryController ];
 
 function GalleryController($log){
   $log.debug('init galleryCtrl');
+  this.title = 'Here are some pictures!';
 }

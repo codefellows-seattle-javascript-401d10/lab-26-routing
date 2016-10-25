@@ -8,17 +8,17 @@ const path = require('path');
 
 // require npm modules
 const angular = require('angular');
-const camelcase = require('camelcase');
+// const camelcase = require('camelcase');
 const pascalcase = require('pascalcase');
 
 // require angualr modules
-const ngTouch = require('angular-touch');
-const ngAnimate = require('angular-animate');
+// const ngTouch = require('angular-touch');
+// const ngAnimate = require('angular-animate');
 const uiRouter = require('angular-ui-router');
-const uiBootstrap = require('angular-ui-bootstrap');
+// const uiBootstrap = require('angular-ui-bootstrap');
 
 // create angular module
-const lizzieApp = angular.module('lizzieApp', [ngTouch, ngAnimate, uiRouter, uiBootstrap]);
+const lizzieApp = angular.module('lizzieApp', [uiRouter]);
 
 // load config
 let context = require.context('./config/', true, /\.js$/);

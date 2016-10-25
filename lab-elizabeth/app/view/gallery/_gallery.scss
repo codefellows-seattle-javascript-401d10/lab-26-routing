@@ -1,5 +1,13 @@
 @import "theme";
 
 .gallery {
+  width: 70%;
+  height: 50%;
   background-color: $app-info;
+
+  h1 {
+    font-family: $app-title;
+    font-size: 3em;
+    color: $app-white;
+  }
 }
