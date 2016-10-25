@@ -1,0 +1,20 @@
+{
+  "name": "lab-26-routing",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) lab-26-slugram ====",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loganlsr/lab-26-routing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loganlsr/lab-26-routing/issues"
+  },
+  "homepage": "https://github.com/loganlsr/lab-26-routing#readme"
+}
