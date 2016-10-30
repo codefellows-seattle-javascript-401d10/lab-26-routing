@@ -5,7 +5,6 @@ require('./scss/main.scss');
 
 // non angular npm modules
 const path = require('path');
-const camelcase = require('camelcase');
 const pascalcase = require('pascalcase');
 
 //angular
