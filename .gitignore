@@ -1,19 +1,8 @@
-build
 .env
-
-# Created by https://www.gitignore.io/api/vim,osx,windows,node,linux
-### Vim ###
-# swap
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-# session
-Session.vim
-# temporary
-.netrwhist
-*~
-# auto-generated tag files
-tags
-
+build
+coverage
+html-report
+# Created by https://www.gitignore.io/api/osx,windows,vim,node,linux
 
 ### OSX ###
 *.DS_Store
@@ -59,6 +48,19 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+### Vim ###
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
 
 
 ### Node ###
